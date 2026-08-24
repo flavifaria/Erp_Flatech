@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Erp_Flatech">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/Erp_Flatech.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
