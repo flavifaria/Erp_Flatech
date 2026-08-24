@@ -9,24 +9,21 @@ import java.sql.*;
  * @author Flávio
  */
 public class ModuloConexao {
-    public static Connection connector(){
+public static Connection connector(){
         java.sql.Connection conexao = null;
-        //linha chamando o driver
         String driver = "com.mysql.cj.jdbc.Driver";
         
-        //armazenando informações do banco 
-        String url="jdbc:mysql//localhost:3306/nome do banco";
-        String user="root";
-        String password="";
         
-        //estabelecendo a conexão
+        String url = "jdbc:mysql://localhost:3306/seu banco de dados";
+        String user = "root";
+        String password = "";
+        
         try {
-            //caso de certo 
             Class.forName(driver);
-            conexao = DriverManager.getConnection(url,user,password);
+            conexao = DriverManager.getConnection(url, user, password);
             return conexao;        
         } catch (Exception e) {
-            //caso de errado
+            System.out.println("Erro na conexão com o banco: " + e.getMessage());
             return null;
         }
     }
