@@ -15,9 +15,9 @@ public class ModuloConexao {
         String driver = "com.mysql.cj.jdbc.Driver";
         
         //armazenando informações do banco 
-        String url="jdbc:mysql//localhost:3306/erp_vendas";
+        String url="jdbc:mysql//localhost:3306/nome do banco";
         String user="root";
-        String password="123456";
+        String password="";
         
         //estabelecendo a conexão
         try {
