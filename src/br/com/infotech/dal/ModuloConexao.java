@@ -12,7 +12,7 @@ public class ModuloConexao {
     public static Connection connector(){
         java.sql.Connection conexao = null;
         //linha chamando o driver
-        String driver = "com.mysql.jdbc.Driver";
+        String driver = "com.mysql.cj.jdbc.Driver";
         
         //armazenando informações do banco 
         String url="jdbc:mysql//localhost:3306/erp_vendas";
