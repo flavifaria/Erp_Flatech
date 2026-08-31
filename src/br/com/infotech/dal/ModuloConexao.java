@@ -9,12 +9,11 @@ import java.sql.*;
  * @author Flávio
  */
 public class ModuloConexao {
-public static Connection connector(){
+   public static Connection connector(){
         java.sql.Connection conexao = null;
         String driver = "com.mysql.cj.jdbc.Driver";
         
-        
-        String url = "jdbc:mysql://localhost:3306/seu banco de dados";
+        String url = "jdbc:mysql://localhost:3306/seu bd";
         String user = "root";
         String password = "";
         
